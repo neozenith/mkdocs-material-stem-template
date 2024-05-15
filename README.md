@@ -4,30 +4,17 @@ GH pages static site using MKDocs + Material UI theme with the additions of some
 
 # Quickstart
 
-```sh
-python3 -m venv .venv
-.venv/bin/python3 -m pip install -U pip pip-tools
-.venv/bin/python3 -m piptools compile --generate-hashes requirements.in --output-file requirements.txt
-.venv/bin/python3 -m pip install -r requirements.txt --require-hashes --no-deps
-```
+1. Click the **Use Template** button in the top right to make a copy of this repo.
+2. You should be able to press `.` on Github to open up a browser editor
+3. Edit, save and commit any of the markdown files
+4. The Github Actions will deploy the new version of the site to `https://<yourusername>.github.io/<nameofrepo> after you have enabled Github Pages in Settings: https://github.com/<yourusername>/<reponame>/settings/pages
 
 ```sh
-.venv/bin/python3 -m mkdocs build
-.venv/bin/python3 -m mkdocs serve
+make quickstart
 ```
 
-
-# Resources
 
 
 # TODO
 
- - ~Locally build MKDocs~
- - Locally build MKDocs + extensions
-    - ~Draw.io architecture diagrams~
-    - Notebooks
-    - Plotly diagrams in Markdown
- - Publish example website
- - Github Actions should work without the need for local developement
-    - https://github.com/LukeCarrier/mkdocs-drawio-exporter/blob/main/docs/github-actions.md
- - Should work as a GH Template Repo
+- Plotly diagrams in Markdown
