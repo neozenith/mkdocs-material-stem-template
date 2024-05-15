@@ -1,5 +1,5 @@
 # Plotly Diagrams
 
 ```plotly
-{"file_path": "./assets/data.json"}
+{"file_path": "plotly-iris-splom.json"}
 ```

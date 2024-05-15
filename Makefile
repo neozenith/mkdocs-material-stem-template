@@ -21,6 +21,8 @@ dev:
     	--editable .  # <- the app/pkg itself
 
 science:
+	pip install -q pandas plotly jupyter-dash
+	jupyter lab build
 	jupyter lab
 
 fix:
