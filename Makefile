@@ -32,6 +32,9 @@ docs: fix
 	.venv/bin/md_toc --in-place github --header-levels 4 README.md
 	.venv/bin/mkdocs build
 
+docs-dev:
+	.venv/bin/mkdocs serve
+
 clean:
 	rm -rfv .venv
 	rm -rfv dbt_projects

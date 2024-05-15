@@ -55,6 +55,8 @@ markdown_extensions:
         - name: plotly
           class: mkdocs-plotly
           format: !!python/name:mkdocs_plotly_plugin.fences.fence_plotly
-nav:
-- 'index.md'
-- Code Reference: reference/  
+# nav:
+# - 'index.md'
+# - plotly.md
+# - notebooks.md
+# - Code Reference: reference/  
