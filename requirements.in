@@ -1,0 +1,17 @@
+# Bare minimum
+mkdocs
+mkdocs-material
+mkdocstrings
+mkdocstrings-python
+mkdocs-gen-files
+mkdocs-literate-nav
+mkdocs-section-index
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-authors-plugin
+mkdocs-render-swagger-plugin
+
+# Scientific + Engineering
+mkdocs-jupyter
+mkdocs-plotly-plugin
+mkdocs-blogging-plugin
+mkdocs-drawio-exporter

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MKDocs Material STEM Template"
+version = "1.0.0"
+description = "Mini blog / readme about python onboarding steps to get setup"
+authors = [{name = "Josh Peak", email = "neozenith.dev@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.10"
+
+dependencies = [
+    "md-toc"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pre-commit",
+    "ruff",
+    "isort",
+    "md-toc",
+    "watchdog"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+homepage = "https://github.com/neozenith/mkdocs-material-stem-template"
+repository = "https://github.com/neozenith/mkdocs-material-stem-template"
+documentation = "https://github.com/neozenith/mkdocs-material-stem-template"
