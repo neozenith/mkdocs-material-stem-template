@@ -20,6 +20,8 @@ dev:
     	-r requirements-dev.txt \
     	--editable .  # <- the app/pkg itself
 
+quickstart: init dev drawio-png docs docs-dev
+
 science:
 	pip install -q pandas plotly jupyter-dash
 	jupyter lab build
