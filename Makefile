@@ -35,7 +35,10 @@ docs:
 docs-dev:
 	.venv/bin/mkdocs serve
 
-ci-build: init prod docs
+drawio-png:
+	npx --yes draw.io-export ./docs/diagrams/architecture.drawio -o ./docs/diagrams/architecture.png
+
+ci-build: init prod drawio-png docs
 
 clean:
 	rm -rfv .venv
