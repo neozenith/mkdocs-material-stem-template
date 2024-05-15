@@ -20,13 +20,17 @@ dev:
     	-r requirements-dev.txt \
     	--editable .  # <- the app/pkg itself
 
+science:
+	jupyter lab
+
 fix:
 	.venv/bin/ruff check . --fix
 	.venv/bin/pre-commit run
 	.venv/bin/isort .
 
-docs:
+docs: fix
 	.venv/bin/md_toc --in-place github --header-levels 4 README.md
+	.venv/bin/mkdocs build
 
 clean:
 	rm -rfv .venv

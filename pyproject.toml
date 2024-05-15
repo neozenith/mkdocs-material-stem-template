@@ -36,7 +36,8 @@ dev = [
     "ruff",
     "isort",
     "md-toc",
-    "watchdog"
+    "watchdog",
+    "jupyter"
 ]
 
 [tool.setuptools]
