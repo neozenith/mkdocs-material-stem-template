@@ -11,7 +11,7 @@ lock:
 
 prod:
 	.venv/bin/python3 -m pip install \
-    	--require-hashes --no-deps --only-binary :all: \
+    	--require-hashes --no-deps \
     	-r requirements.txt
 	.venv/bin/python3 -m pip install .  # <- the app/pkg itself
 
@@ -28,12 +28,14 @@ fix:
 	.venv/bin/pre-commit run
 	.venv/bin/isort .
 
-docs: fix
+docs:
 	.venv/bin/md_toc --in-place github --header-levels 4 README.md
 	.venv/bin/mkdocs build
 
 docs-dev:
 	.venv/bin/mkdocs serve
+
+ci-build: init prod docs
 
 clean:
 	rm -rfv .venv
