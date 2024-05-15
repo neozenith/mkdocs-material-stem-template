@@ -11,7 +11,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://organisationname.github.io/reponame/blog/</loc>
+         <lastmod>2024-05-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://organisationname.github.io/reponame/blog/2024-04-30-ExperimentOne/</loc>
+         <lastmod>2024-05-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://organisationname.github.io/reponame/blog/2024-05-15-ExperimentTwo/</loc>
+         <lastmod>2024-05-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://organisationname.github.io/reponame/notebooks/example_notebook/</loc>
          <lastmod>2024-05-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
