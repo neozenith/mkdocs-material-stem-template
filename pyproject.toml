@@ -3,7 +3,7 @@ requires = ["setuptools >= 61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "MKDocs Material STEM Template"
+name = "mkdocs-material-stem-template"
 version = "1.0.0"
 description = "Mini blog / readme about python onboarding steps to get setup"
 authors = [{name = "Josh Peak", email = "neozenith.dev@gmail.com"}]
@@ -11,8 +11,22 @@ readme = "README.md"
 license = {text = "MIT License"}
 requires-python = ">=3.10"
 
+
 dependencies = [
-    "md-toc"
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings",
+    "mkdocstrings-python",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-git-authors-plugin",
+    "mkdocs-render-swagger-plugin",
+    "mkdocs-jupyter",
+    "mkdocs-plotly-plugin",
+    "mkdocs-blogging-plugin",
+    "mkdocs-drawio-exporter"
 ]
 
 [project.optional-dependencies]
