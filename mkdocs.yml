@@ -46,7 +46,7 @@ plugins:
 
 # Science and Engineering
 - plotly
-- drawio-exporter
+# - drawio-exporter
 - mkdocs-jupyter
 
 markdown_extensions:
