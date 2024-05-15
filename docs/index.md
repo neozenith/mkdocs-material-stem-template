@@ -1,3 +1,3 @@
 # Index Heading
 
-![Architecture](diagrams/architecture.drawio)
+![Architecture](diagrams/architecture.png)
