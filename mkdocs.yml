@@ -3,6 +3,8 @@ site_url: https://organisationname.github.io/reponame
 
 theme:
   name: material
+  palette:
+        scheme: slate
 
 plugins:
 - search  
@@ -47,7 +49,10 @@ plugins:
 # Science and Engineering
 - plotly
 # - drawio-exporter
-- mkdocs-jupyter
+- mkdocs-jupyter:
+    theme: dark
+    include_requirejs: true # This is needed to assist with Plotly in Jupyter. Separate from Ploty in markdown.
+    ignore: ["**/.ipynb_checkpoints/*"]
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -55,8 +60,3 @@ markdown_extensions:
         - name: plotly
           class: mkdocs-plotly
           format: !!python/name:mkdocs_plotly_plugin.fences.fence_plotly
-# nav:
-# - 'index.md'
-# - plotly.md
-# - notebooks.md
-# - Code Reference: reference/  
